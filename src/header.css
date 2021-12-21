@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+nav {
+    background-color: #1877F2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    filter: drop-shadow(0 0px 6px #1877F2);
+}
+
+/* nav a:active {
+    all: unset;
+} */
+
+nav h2 {
+    font-family: 'Sacramento', cursive; 
+    color:white;
+    height: auto;
+    margin-left: 1em;
+    font-size:1.7em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    filter: brightness(80%);
+}
+
+.list1 {
+    width:30%;
+}
+
+.list1 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.list1 ul li {
+    list-style-type: none;
+    color:white;
+    font-size: large;
+}
+
+.navbar-buttons {
+    display: flex;
+    padding: 1em;
+    justify-content: flex-end;
+}
+
+.navbar-buttons button {
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #3FB127;
+}
+
+/* </Navbar> */
+
+/* <buttons> */
+
+button:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+/* media query */
