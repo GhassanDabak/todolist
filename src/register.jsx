@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import './register.css'
 import Swal from 'sweetalert2';
+import {useNavigate} from 'react-router-dom'
 
 function Register() {
 
+    let navigate = useNavigate()
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -122,6 +124,7 @@ function Register() {
                         'Account Created!',
                         'success'
                     )
+                    navigate("/")
 
                 }
                 else {
@@ -141,6 +144,9 @@ function Register() {
                     'Account Created!',
                     'success'
                 )
+                navigate("/")
+
+
             }
         }
 
